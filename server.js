@@ -16,7 +16,7 @@ const app = next({ dev });
 const handle = app.getRequestHandler();
 
 // 创建redis client
-const redis = new Redis();
+const redis = new Redis(6379, "39.108.50.69");
 
 // 设置nodejs全局增加一个atob方法
 global.atob = atob;

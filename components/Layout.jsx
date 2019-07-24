@@ -72,14 +72,14 @@ function MyLayout({ children, user, logout, router }) {
     }, []);
 
     const userDropDown = (
-        <Menu>
-            <Menu.item>
-                <a href="javascript:void(0)" onClick={handleLogout}>
-                    登 出
-                </a>
-            </Menu.item>
-        </Menu>
-    )
+      <Menu>
+        <Menu.Item>
+          <a href="javascript:void(0)" onClick={handleLogout}>
+            登 出
+          </a>
+        </Menu.Item>
+      </Menu>
+    );
 
     return (
         <Layout>
