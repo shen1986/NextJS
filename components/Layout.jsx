@@ -43,7 +43,7 @@ function MyLayout({ children, user, logout, router }) {
 
     const handleSearchChange = useCallback(
         event => {
-            setSearch(event.target,value)
+            setSearch(event.target.value)
         },
         [setSearch],
     )
