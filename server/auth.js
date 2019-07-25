@@ -25,8 +25,6 @@ module.exports = server => {
                 },
             });
 
-            console.log(result.status, result.data);
-
             if (result.status === 200 && (result.data && !result.data.error)) {
                 ctx.session.githubAuth = result.data;
 

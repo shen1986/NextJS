@@ -39,12 +39,12 @@ class MyApp extends App {
         Router.events.off("routeChangeStart", this.stopLoading);
     }
 
-    static async getInitialPrps(ctx) {
+    static async getInitialProps(ctx) {
         const { Component } = ctx;
         console.log('app init');
         let pageProps = {};
-        if (Component.getInitialPrps) {
-            pageProps = await Component.getInitialPrps(ctx);
+        if (Component.getInitialProps) {
+            pageProps = await Component.getInitialProps(ctx);
         }
 
         return {

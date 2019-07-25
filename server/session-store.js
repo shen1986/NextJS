@@ -17,6 +17,7 @@ class RedisSessionStore {
         }
         try {
             const result = JSON.parse(data);
+            return result;
         } catch (err) {
             console.error(err);
         }
