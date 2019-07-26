@@ -14,6 +14,7 @@ import {
     Tooltip,
     Dropdown,
     Menu,
+    message,
 } from 'antd';
 
 import Container from './Container';
@@ -49,6 +50,9 @@ function MyLayout({ children, user, logout, router }) {
     )
 
     const handleOnSearch = useCallback(() => {
+        if (!search || search.length === 0) {
+            return message.error('请输入检索条件')
+        }
         router.push(`/search?query=${search}`);
     }, [search]);
 

@@ -35,8 +35,8 @@ function Index({ userRepos, userStaredRepos, user, router }) {
         // }
 
         const timeout = setTimeout(() => {
-        cachedUserRepos = null;
-        cachedUserStaredRepos = null;
+            cachedUserRepos = null;
+            cachedUserStareRepos = null;
         }, 1000 * 60 * 10);
       }
     }, [userRepos, userStaredRepos]);
