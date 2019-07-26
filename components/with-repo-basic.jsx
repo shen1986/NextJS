@@ -19,7 +19,7 @@ function makeQuery(queryObject) {
 const isServer = typeof window === 'undefined';
 export default function(Comp, type = 'index') {
     function WithDetail({ repoBasic, router, ...rest}) {
-        console.log(repoBasic);
+        // console.log(repoBasic);
         const query = makeQuery(router.query);
 
         useEffect(() => {

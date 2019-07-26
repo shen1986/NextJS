@@ -138,7 +138,7 @@ function Index({ userRepos, userStaredRepos, user, router }) {
 
 Index.getInitialProps = async ({ ctx, reduxStore }) => {
     const user = reduxStore.getState().user;
-    console.log(reduxStore);
+    // console.log(reduxStore);
     if (!user || !user.id) {
         return {
             isLogin: false,

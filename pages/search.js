@@ -208,8 +208,6 @@ Search.getInitialProps = async ({ ctx }) => {
         ctx.res,
     )
 
-    console.log("resultresultresultresult", result);
-
     return {
         repos: result.data,
     }
